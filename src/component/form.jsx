@@ -4,12 +4,16 @@ import "../css/form.css";
 
 const Form = () => {
 
+    const handleSubmit = evnt => {
+        evnt.preventDefault();
+        console.log("en progreso");
+    }
 
     return (
         <>
             <h1 className="title">Publicar notas de Estudiantes</h1>
 
-            <form onSubmit={this.handleSubmit} id="form-reg">
+            <form onSubmit={handleSubmit} id="form-reg">
                 <div className="input">
                     <label>Nombre:</label>
                     <input id="name" type="text" name="nombre" placeholder="Ejemplo: Juan Martinez" />
