@@ -1,0 +1,43 @@
+/* Reglas de estilos para el formulario */
+form {
+    width: 380px;
+    margin: 50px auto;
+}
+
+.input {
+    margin-top: 10px;
+    display: flex;
+}
+
+.input label {
+    width: 20%;
+    text-align: right;
+    padding-right: 5px;
+    align-self: center;
+}
+
+.input input {
+    padding: 6px 12px;
+    border: 1px solid #000;
+    width: 60%;
+}
+
+.input:nth-child(3) input,
+.input:nth-child(4) input {
+    width: 25%;
+}
+
+.botones {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botones button {
+    padding: 8px 20px;
+
+}
+
+.btn-registrar {
+    background-color: blue;
+    color: #fff;
+}

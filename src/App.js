@@ -1,15 +1,19 @@
 import React from 'react';
-import './App.css';
-import Form from './component/form';
-import Table from './component/table';
+import './css/global.css';
+import Form from './component/form.jsx';
+import Table from './component/table.jsx';
 
-function App() {
-  return (
-    <>
-    <Form/>
-    <Table/>
-    </>
-  );
+class App extends React.Component {
+
+  render(){
+    return (
+      <>
+        <Form />
+        <Table />
+      </>
+    );
+  }
 }
 
 export default App;
+

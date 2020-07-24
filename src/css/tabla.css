@@ -1,0 +1,36 @@
+table {
+    width: 480px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 18px;
+}
+
+thead tr {
+    background-color: rgb(12, 204, 192);
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    background-color: #fff;
+}
+
+.btn-editar {
+    color: blue;
+}
+
+.btn-eliminar {
+    color: red;
+}
+
