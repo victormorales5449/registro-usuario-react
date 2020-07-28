@@ -2,12 +2,22 @@ import React, {useRef, useState} from "react";
 
 import "../css/form.css";
 
-const Form = () => {
 
-    const handleSubmit = evnt => {
-        evnt.preventDefault();
-        console.log("en progreso");
-    }
+const initialSatage = {
+    name: "",
+    matricula: "",
+    edad: "",
+    calificacion: "",
+}
+
+const [userData, setUserData] = useState(initialState)
+
+const handleSubmit = evnt => {
+    evnt.preventDefault();
+
+}
+
+const Form = () => {
 
     return (
         <>
