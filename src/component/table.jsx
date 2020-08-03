@@ -11,23 +11,23 @@ const Table = props => {
                     <tr>
                         <th>Nombre</th>
                         <th>Matricula</th>
-                        <th> Edad</th>
-                        <th>NotaFinal</th>
-                        <th>Accion</th>
+                        <th>Edad</th>
+                        <th>Calificación</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        props.userData.length > 0 ?
-                            props.userData.map(user => (
-                                <tr>
+                        props.showData != null ?
+                            props.showData.map((user, id) => (
+                                <tr key={id}>
                                     <td>{user.Nombre}</td>
                                     <td>{user.Matricula}</td>
                                     <td>{user.Edad}</td>
-                                    <td>{user.Nota}</td>
+                                    <td>{user.Calificacion}</td>
                                     <td>
-                                        <a className="btn-editar" href={user.Matricula}>Editar</a>
-                                        <a className="btn-useriminar" href={user.Nombre}>Eliminar</a>
+                                        <a className="btn-editar" href={user.matricula}>Editar</a>
+                                        <a className="btn-useriminar" href={user.nombre}>Eliminar</a>
                                     </td>
                                 </tr>
                             )) : (
